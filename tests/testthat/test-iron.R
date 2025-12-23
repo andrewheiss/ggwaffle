@@ -219,7 +219,7 @@ testthat::test_that('byrow = FALSE fills column-wise (default behavior)', {
   
   result <- waffle_iron(
     data = small_iris,
-    mapping = aes_d_(group = 'Species'),
+    mapping = aes_d(group = Species),
     rows = 3,
     sample_size = 1,
     na.rm = TRUE,
@@ -246,7 +246,7 @@ testthat::test_that('byrow = TRUE fills row-wise', {
   
   result <- waffle_iron(
     data = small_iris,
-    mapping = aes_d_(group = 'Species'),
+    mapping = aes_d(group = Species),
     rows = 3,
     sample_size = 1,
     na.rm = TRUE,
